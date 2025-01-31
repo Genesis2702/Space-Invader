@@ -5,9 +5,10 @@ using UnityEngine.UIElements;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private float speed = 5.0f;
+    private float speed = 5.0f;
     private float xBound = 0.37f;
     private float backgroundBound = 11.0f;
+    public GameObject bullet;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -21,6 +22,10 @@ public class PlayerController : MonoBehaviour
         float HorizontalInput = Input.GetAxis("Horizontal");
         transform.Translate(Vector2.right * speed *  HorizontalInput * Time.deltaTime);
         OutOfBounds();
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            SpawningBullets();
+        }
     }
 
     private Vector2 SetInitialPosition()
@@ -39,5 +44,10 @@ public class PlayerController : MonoBehaviour
         {
             transform.position = new Vector3(-backgroundBound + xBound, transform.position.y);
         }
+    }
+
+    private void SpawningBullets()
+    {
+        Instantiate(bullet, transform.position + new Vector3(0, 0.1f), bullet.gameObject.transform.rotation);
     }
 }
