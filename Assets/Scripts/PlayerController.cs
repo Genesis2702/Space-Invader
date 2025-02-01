@@ -1,3 +1,4 @@
+using System.Collections;
 using Unity.VisualScripting;
 using UnityEditor.IMGUI.Controls;
 using UnityEngine;
@@ -9,29 +10,45 @@ public class PlayerController : MonoBehaviour
     private float xBound = 0.37f;
     private float backgroundBound = 11.0f;
     public GameObject bulletPrefab;
-    public int lives = 3;
-    public bool isAlive = true;
+    private int lives = 3;
+    public bool isAlive;
+    public bool isHit;
+    private float fireRate = 0.5f;
+    private bool shootAllow = true;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        isAlive = true;
+        isHit = false;
         transform.position = SetInitialPosition();
     }
 
     // Update is called once per frame
     void Update()
     {
-        float HorizontalInput = Input.GetAxis("Horizontal");
-        transform.Translate(Vector2.right * speed *  HorizontalInput * Time.deltaTime);
-        OutOfBounds();
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (isAlive == true)
         {
-            SpawningBullets();
+            float HorizontalInput = Input.GetAxis("Horizontal");
+            transform.Translate(Vector2.right * speed *  HorizontalInput * Time.deltaTime);
+            OutOfBounds();
+            if (Input.GetKeyDown(KeyCode.Space) && shootAllow)
+            {
+                StartCoroutine(Shooting());
+            }
         }
         if (lives == 0)
         {
             isAlive = false;
         }
+    }
+
+    IEnumerator Shooting()
+    {
+        shootAllow = false;
+        yield return new WaitForSeconds(fireRate);
+        SpawningBullets();
+        shootAllow = true;
     }
 
     private Vector2 SetInitialPosition()
@@ -61,6 +78,7 @@ public class PlayerController : MonoBehaviour
     {
         if (other.CompareTag("Enemy Bullet"))
         {
+            isHit = true;
             lives--;
         }
     }

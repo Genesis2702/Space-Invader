@@ -5,26 +5,31 @@ using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
-    private float xBound = 11;
+    private float xBound = 10;
     private float yBound = 4;
     public GameObject enemyPrefab;
     private int enemyCount;
     private int enemyToSpawn = 3;
+    private PlayerController playerControllerScript;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        playerControllerScript = GameObject.Find("Player").GetComponent<PlayerController>();
         SpawningEnemy(enemyToSpawn);
     }
 
     // Update is called once per frame
     void Update()
     {
-        enemyCount = FindObjectsByType<Enemy>(FindObjectsSortMode.None).Length;
-        if (enemyCount == 0)
+        if (playerControllerScript.isAlive == true)
         {
-            enemyToSpawn++;
-            SpawningEnemy(enemyToSpawn);
+            enemyCount = FindObjectsByType<Enemy>(FindObjectsSortMode.None).Length;
+            if (enemyCount == 0)
+            {
+                enemyToSpawn++;
+                SpawningEnemy(enemyToSpawn);
+            }
         }
     }
 

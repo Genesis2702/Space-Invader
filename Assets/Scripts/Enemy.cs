@@ -1,31 +1,38 @@
 using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 using JetBrains.Annotations;
 using Unity.VisualScripting;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    private float speed = 3.0f;
+    private float speed = 4.0f;
     private int backgroundBound = 11;
     private float xBound = 0.45f;
     public GameObject enemyBullet;
     private bool shootAllow = true;
     private float fireRate = 3.0f;
+    public List<GameObject> powerup;
+    private PlayerController playerControllerScript;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        playerControllerScript = GameObject.Find("Player").GetComponent<PlayerController>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector2.right * speed * Time.deltaTime);
-        OutOfBoundsDirection();
-        if (shootAllow == true)
+        if (playerControllerScript.isAlive == true)
         {
-            StartCoroutine(ShootingBullet());
+            transform.Translate(Vector2.right * speed * Time.deltaTime);
+            OutOfBoundDirection();
+            if (shootAllow == true)
+            {
+                StartCoroutine(ShootingBullet());
+            }
         }
     }
 
@@ -42,20 +49,20 @@ public class Enemy : MonoBehaviour
         if (other.CompareTag("Bullet"))
         {
             Destroy(gameObject);
+            int chance = Random.Range(0, 100);
+            if (chance >= 70)
+            {
+                int typeOfOrb = Random.Range(0, 2);
+                Instantiate(powerup[typeOfOrb], transform.position, powerup[typeOfOrb].transform.rotation);
+            }
         }
     }
 
-    private void OutOfBoundsDirection()
+    private void OutOfBoundDirection()
     {
-        if (transform.position.x > backgroundBound - xBound)
+        if (transform.position.x > backgroundBound - xBound || transform.position.x < -backgroundBound + xBound)
         {
             speed *= -1;
-            transform.Translate(Vector2.right * speed * Time.deltaTime);
-        }
-        else if (transform.position.x < -backgroundBound + xBound)
-        {
-            speed *= -1;
-            transform.Translate(Vector2.right * speed * Time.deltaTime);
         }
     }
 }

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: bc84e10a241c4ac4aa23472b376d27fe
+guid: f9ae5c092b2084a4c8f8728c7b80737d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1189318788202230643
-    second: Bullet (Enemy)2_0
+      213: -8010216358908403713
+    second: ShieldOrb_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bullet (Enemy)2_0
+      name: ShieldOrb_0
       rect:
         serializedVersion: 2
-        x: 31
-        y: 31
-        width: 34
-        height: 34
+        x: 18
+        y: 18
+        width: 59
+        height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 373fd77f22f418010800000000000000
-      internalID: 1189318788202230643
+      spriteID: fffdd3959aef5d090800000000000000
+      internalID: -8010216358908403713
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Bullet (Enemy)2_0: 1189318788202230643
+      ShieldOrb_0: -8010216358908403713
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
