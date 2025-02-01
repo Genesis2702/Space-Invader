@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class MovingForward : MonoBehaviour
+public class MovingDownward : MonoBehaviour
 {
     private float speed = 5.0f;
 
@@ -13,8 +13,8 @@ public class MovingForward : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector2.up * speed * Time.deltaTime);
-        if (transform.position.y > 5)
+        transform.Translate(Vector2.down * speed * Time.deltaTime);
+        if (transform.position.y < -5)
         {
             DestroyOutOfBound();
         }
@@ -27,7 +27,7 @@ public class MovingForward : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Enemy"))
+        if (other.CompareTag("Player"))
         {
             Destroy(gameObject);
         }

@@ -8,7 +8,9 @@ public class PlayerController : MonoBehaviour
     private float speed = 5.0f;
     private float xBound = 0.37f;
     private float backgroundBound = 11.0f;
-    public GameObject bullet;
+    public GameObject bulletPrefab;
+    public int lives = 3;
+    public bool isAlive = true;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -25,6 +27,10 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             SpawningBullets();
+        }
+        if (lives == 0)
+        {
+            isAlive = false;
         }
     }
 
@@ -48,6 +54,14 @@ public class PlayerController : MonoBehaviour
 
     private void SpawningBullets()
     {
-        Instantiate(bullet, transform.position + new Vector3(0, 0.1f), bullet.gameObject.transform.rotation);
+        Instantiate(bulletPrefab, transform.position + new Vector3(0, 0.1f), bulletPrefab.gameObject.transform.rotation);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Enemy Bullet"))
+        {
+            lives--;
+        }
     }
 }

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d53fd9e362628b64bb9f8a5d9b3c8379
+guid: 338bac9712d96cc4a97dd95d1f41d7ed
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2009410003007727163
-    second: bullet1_0
+      213: 6121648201972646743
+    second: Spaceship-idle2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bullet1_0
+      name: Spaceship-idle2_0
       rect:
         serializedVersion: 2
-        x: 30
-        y: 30
-        width: 36
-        height: 35
+        x: 10
+        y: 0
+        width: 76
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b36646d50cbd2eb10800000000000000
-      internalID: 2009410003007727163
+      spriteID: 7530d761b9674f450800000000000000
+      internalID: 6121648201972646743
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      bullet1_0: 2009410003007727163
+      Spaceship-idle2_0: 6121648201972646743
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
