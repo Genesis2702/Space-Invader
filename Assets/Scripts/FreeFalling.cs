@@ -3,7 +3,7 @@ using UnityEngine;
 public class FreeFalling : MonoBehaviour
 {
     private float gravitationalForce = 5.0f;
-    private float yBound = 5.0f;
+    private float yBound = 6.0f;
     private Rigidbody orbRb;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

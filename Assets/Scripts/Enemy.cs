@@ -8,7 +8,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     private float speed = 4.0f;
-    private int backgroundBound = 11;
+    private int backgroundBound = 13;
     private float xBound = 0.45f;
     public GameObject enemyBullet;
     private bool shootAllow = true;

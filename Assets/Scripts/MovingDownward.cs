@@ -14,7 +14,7 @@ public class MovingDownward : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector2.down * speed * Time.deltaTime);
-        if (transform.position.y < -5)
+        if (transform.position.y < -6)
         {
             DestroyOutOfBound();
         }

@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
-    private float xBound = 10;
-    private float yBound = 4;
+    private float xBound = 12;
+    private float yBound = 5;
     public GameObject enemyPrefab;
     private int enemyCount;
     private int enemyToSpawn = 3;
@@ -35,7 +35,7 @@ public class SpawnManager : MonoBehaviour
 
     private Vector2 GenerateRandomPosition()
     {
-        return new Vector2(Random.Range(-xBound, xBound), Random.Range(0, yBound));
+        return new Vector2(Random.Range(-xBound, xBound + 1), Random.Range(1, yBound));
     }
 
     private void SpawningEnemy(int numberOfEnemy)
