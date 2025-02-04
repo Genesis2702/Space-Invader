@@ -15,7 +15,7 @@ public class RepeatingBackground : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector2.down * speed * Time.deltaTime);
-        if (transform.position.y < centerPosition.y - 19.2f)
+        if (transform.position.y < centerPosition.y - 25.6f)
         {
             transform.position = centerPosition;
         }

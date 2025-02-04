@@ -15,11 +15,16 @@ public class Enemy : MonoBehaviour
     private float fireRate = 3.0f;
     public List<GameObject> powerup;
     private PlayerController playerControllerScript;
+    public AudioClip shootingSound;
+    private AudioSource enemyAudio;
+    private GameManager gameManagerScript;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        enemyAudio = GetComponent<AudioSource>();
         playerControllerScript = GameObject.Find("Player").GetComponent<PlayerController>();
+        gameManagerScript = GameObject.Find("Game Manager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
@@ -40,6 +45,7 @@ public class Enemy : MonoBehaviour
     {
         shootAllow = false;
         yield return new WaitForSeconds(fireRate);
+        enemyAudio.PlayOneShot(shootingSound, 0.5f);
         Instantiate(enemyBullet, transform.position, enemyBullet.transform.rotation);
         shootAllow = true;
     }
@@ -49,6 +55,7 @@ public class Enemy : MonoBehaviour
         if (other.CompareTag("Bullet"))
         {
             Destroy(gameObject);
+            gameManagerScript.UpdateScore(5);
             int chance = Random.Range(0, 100);
             if (chance >= 70)
             {

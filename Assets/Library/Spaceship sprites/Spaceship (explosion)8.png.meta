@@ -1,0 +1,754 @@
+fileFormatVersion: 2
+guid: d25c6c742158f1540b2cb0da9c56b1ae
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2234120571522408105
+    second: Spaceship (explosion)8_0
+  - first:
+      213: 8595563313427862173
+    second: Spaceship (explosion)8_1
+  - first:
+      213: 8241487597742522258
+    second: Spaceship (explosion)8_2
+  - first:
+      213: 3420900252708654351
+    second: Spaceship (explosion)8_3
+  - first:
+      213: 2955996712893770667
+    second: Spaceship (explosion)8_4
+  - first:
+      213: 4797489909145617294
+    second: Spaceship (explosion)8_5
+  - first:
+      213: 1712629770503696844
+    second: Spaceship (explosion)8_6
+  - first:
+      213: 4293160913911344382
+    second: Spaceship (explosion)8_7
+  - first:
+      213: -390988219768383795
+    second: Spaceship (explosion)8_8
+  - first:
+      213: 5461029161109422481
+    second: Spaceship (explosion)8_9
+  - first:
+      213: 1829604789118541523
+    second: Spaceship (explosion)8_10
+  - first:
+      213: 3054702283300516912
+    second: Spaceship (explosion)8_11
+  - first:
+      213: 6167508729410684422
+    second: Spaceship (explosion)8_12
+  - first:
+      213: 5603367601898744794
+    second: Spaceship (explosion)8_13
+  - first:
+      213: 8095271605100790702
+    second: Spaceship (explosion)8_14
+  - first:
+      213: -243730549514903138
+    second: Spaceship (explosion)8_15
+  - first:
+      213: -2727040466547187771
+    second: Spaceship (explosion)8_16
+  - first:
+      213: -1968461907044802338
+    second: Spaceship (explosion)8_17
+  - first:
+      213: 648521806364381632
+    second: Spaceship (explosion)8_18
+  - first:
+      213: 5134048505827888592
+    second: Spaceship (explosion)8_19
+  - first:
+      213: 3851310214542854099
+    second: Spaceship (explosion)8_20
+  - first:
+      213: 5221799406898956624
+    second: Spaceship (explosion)8_21
+  - first:
+      213: 677222058360842733
+    second: Spaceship (explosion)8_22
+  - first:
+      213: 2275331759340828000
+    second: Spaceship (explosion)8_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 96
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Spaceship (explosion)8_0
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 99
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ae5cfaa2d0310f10800000000000000
+      internalID: 2234120571522408105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship (explosion)8_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 104
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d925f35da43994770800000000000000
+      internalID: 8595563313427862173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship (explosion)8_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 100
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29ffa3c0e45af5270800000000000000
+      internalID: 8241487597742522258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship (explosion)8_3
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 106
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0d4eb6b7aa797f20800000000000000
+      internalID: 3420900252708654351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship (explosion)8_4
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 97
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bab614d495fc50920800000000000000
+      internalID: 2955996712893770667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship (explosion)8_5
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 98
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e83452877ab149240800000000000000
+      internalID: 4797489909145617294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship (explosion)8_6
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 84
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc1b1aec3bb74c710800000000000000
+      internalID: 1712629770503696844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship (explosion)8_7
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 73
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efce645ea1f549b30800000000000000
+      internalID: 4293160913911344382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship (explosion)8_8
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 80
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc6d751294ee29af0800000000000000
+      internalID: -390988219768383795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship (explosion)8_9
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 86
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1910af7961979cb40800000000000000
+      internalID: 5461029161109422481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship (explosion)8_10
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 77
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3de93ceacdf046910800000000000000
+      internalID: 1829604789118541523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship (explosion)8_11
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 78
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 034b3baca8b746a20800000000000000
+      internalID: 3054702283300516912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship (explosion)8_12
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 63
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60605a53384679550800000000000000
+      internalID: 6167508729410684422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship (explosion)8_13
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 62
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adb6b11652923cd40800000000000000
+      internalID: 5603367601898744794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship (explosion)8_14
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 58
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea3c65e52ae285070800000000000000
+      internalID: 8095271605100790702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship (explosion)8_15
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 42
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e91e0474b581e9cf0800000000000000
+      internalID: -243730549514903138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship (explosion)8_16
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 51
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cfd657e42b972ad0800000000000000
+      internalID: -2727040466547187771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship (explosion)8_17
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 49
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed0e4bc235e9ea4e0800000000000000
+      internalID: -1968461907044802338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship (explosion)8_18
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 41
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c191799523000900800000000000000
+      internalID: 648521806364381632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship (explosion)8_19
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 31
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dd0f792aedcf3740800000000000000
+      internalID: 5134048505827888592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship (explosion)8_20
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 34
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d709a92c3a927530800000000000000
+      internalID: 3851310214542854099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship (explosion)8_21
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 29
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 059ce80f4ee877840800000000000000
+      internalID: 5221799406898956624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship (explosion)8_22
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 29
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de928aebfd9f56900800000000000000
+      internalID: 677222058360842733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship (explosion)8_23
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 35
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 065bcad0e2a939f10800000000000000
+      internalID: 2275331759340828000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Spaceship (explosion)8_0: 2234120571522408105
+      Spaceship (explosion)8_1: 8595563313427862173
+      Spaceship (explosion)8_10: 1829604789118541523
+      Spaceship (explosion)8_11: 3054702283300516912
+      Spaceship (explosion)8_12: 6167508729410684422
+      Spaceship (explosion)8_13: 5603367601898744794
+      Spaceship (explosion)8_14: 8095271605100790702
+      Spaceship (explosion)8_15: -243730549514903138
+      Spaceship (explosion)8_16: -2727040466547187771
+      Spaceship (explosion)8_17: -1968461907044802338
+      Spaceship (explosion)8_18: 648521806364381632
+      Spaceship (explosion)8_19: 5134048505827888592
+      Spaceship (explosion)8_2: 8241487597742522258
+      Spaceship (explosion)8_20: 3851310214542854099
+      Spaceship (explosion)8_21: 5221799406898956624
+      Spaceship (explosion)8_22: 677222058360842733
+      Spaceship (explosion)8_23: 2275331759340828000
+      Spaceship (explosion)8_3: 3420900252708654351
+      Spaceship (explosion)8_4: 2955996712893770667
+      Spaceship (explosion)8_5: 4797489909145617294
+      Spaceship (explosion)8_6: 1712629770503696844
+      Spaceship (explosion)8_7: 4293160913911344382
+      Spaceship (explosion)8_8: -390988219768383795
+      Spaceship (explosion)8_9: 5461029161109422481
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

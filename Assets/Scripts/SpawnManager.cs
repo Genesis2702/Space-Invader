@@ -11,11 +11,14 @@ public class SpawnManager : MonoBehaviour
     private int enemyCount;
     private int enemyToSpawn = 3;
     private PlayerController playerControllerScript;
+    private int wave = 1;
+    private GameManager gameManagerScript;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         playerControllerScript = GameObject.Find("Player").GetComponent<PlayerController>();
+        gameManagerScript = GameObject.Find("Game Manager").GetComponent<GameManager>();
         SpawningEnemy(enemyToSpawn);
     }
 
@@ -27,6 +30,8 @@ public class SpawnManager : MonoBehaviour
             enemyCount = FindObjectsByType<Enemy>(FindObjectsSortMode.None).Length;
             if (enemyCount == 0)
             {
+                wave++;
+                gameManagerScript.UpdateWave(wave);
                 enemyToSpawn++;
                 SpawningEnemy(enemyToSpawn);
             }
