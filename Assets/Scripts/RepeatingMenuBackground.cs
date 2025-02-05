@@ -1,0 +1,23 @@
+using UnityEngine;
+
+public class RepeatingMenuBackground : MonoBehaviour
+{
+    private float speed = 2.0f;
+    private Vector2 centerPosition;
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        centerPosition = transform.position;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        transform.Translate(Vector2.down * speed * Time.deltaTime);
+        if (transform.position.y < centerPosition.y - 14.4f)
+        {
+            transform.position = centerPosition;
+        }
+    }
+}

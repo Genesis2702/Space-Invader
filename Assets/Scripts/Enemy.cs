@@ -9,7 +9,7 @@ public class Enemy : MonoBehaviour
 {
     private float speed = 4.0f;
     private int backgroundBound = 13;
-    private float xBound = 0.45f;
+    private float xBound = 0.6f;
     public GameObject enemyBullet;
     private bool shootAllow = true;
     private float fireRate = 3.0f;
@@ -18,6 +18,7 @@ public class Enemy : MonoBehaviour
     public AudioClip shootingSound;
     private AudioSource enemyAudio;
     private GameManager gameManagerScript;
+    private int lives = 3;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -45,7 +46,7 @@ public class Enemy : MonoBehaviour
     {
         shootAllow = false;
         yield return new WaitForSeconds(fireRate);
-        enemyAudio.PlayOneShot(shootingSound, 0.5f);
+        enemyAudio.PlayOneShot(shootingSound, 0.4f);
         Instantiate(enemyBullet, transform.position, enemyBullet.transform.rotation);
         shootAllow = true;
     }
@@ -54,13 +55,17 @@ public class Enemy : MonoBehaviour
     {
         if (other.CompareTag("Bullet"))
         {
-            Destroy(gameObject);
-            gameManagerScript.UpdateScore(5);
-            int chance = Random.Range(0, 100);
-            if (chance >= 70)
+            lives--;
+            if (lives == 0)
             {
-                int typeOfOrb = Random.Range(0, 2);
-                Instantiate(powerup[typeOfOrb], transform.position, powerup[typeOfOrb].transform.rotation);
+                Destroy(gameObject);
+                gameManagerScript.UpdateScore(5);
+                int chance = Random.Range(0, 100);
+                if (chance >= 70)
+                {
+                    int typeOfOrb = Random.Range(0, 2);
+                    Instantiate(powerup[typeOfOrb], transform.position, powerup[typeOfOrb].transform.rotation);
+                }
             }
         }
     }

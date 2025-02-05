@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
-    private float xBound = 12;
+    private float xBound = 11;
     private float yBound = 5;
     public GameObject enemyPrefab;
     private int enemyCount;

@@ -6,11 +6,11 @@ using UnityEngine.UIElements;
 
 public class PlayerController : MonoBehaviour
 {
-    private float speed = 5.0f;
+    private float speed = 6.0f;
     private float xBound = 0.37f;
     private float backgroundBound = 13.0f;
     public GameObject bulletPrefab;
-    private int lives = 3;
+    private int lives = 5;
     public bool isAlive;
     public bool isHit;
     private float fireRate = 0.3f;
@@ -82,7 +82,8 @@ public class PlayerController : MonoBehaviour
             }
             if (isHit)
             {
-                //playerAudio.PlayOneShot(hitSound);
+                playerAudio.PlayOneShot(hitSound);
+                isHit = false;
             }
         }
         if (lives == 0)
